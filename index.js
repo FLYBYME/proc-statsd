@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+
 var StatsD = require('node-statsd')
 var program = require('commander');
 var proc = require('./lib/proc');
@@ -54,3 +54,4 @@ viewer.action(function(options) {
 });
 
 program.parse(process.argv);
+if (!program.args.length) program.help();
