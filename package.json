@@ -1,6 +1,6 @@
 {
 	"name": "proc-statsd",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"description": "proc to statsd",
 
 	"main": "./index",
