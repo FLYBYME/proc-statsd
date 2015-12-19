@@ -1,0 +1,30 @@
+{
+	"name": "proc-statsd",
+	"version": "1.0.3",
+	"description": "proc to statsd",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FLYBYME/proc-statsd.git"
+	},
+	"bin": {
+		"proc-statsd": "./index.js"
+	},
+	"scripts": {
+		"postinstall": "cp ./upstart.conf /etc/init/proc-statsd.conf"
+	},
+	"dependencies": {
+		"async": "*",
+		"node-statsd": "*",
+		"commander": "2.2.0"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/FLYBYME/proc-statsd/issues"
+	},
+	"homepage": "https://github.com/FLYBYME/proc-statsd#readme"
+}
